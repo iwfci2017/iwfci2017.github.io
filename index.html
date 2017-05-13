@@ -4,14 +4,14 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>iwfci 2017</title>
 <script type="text/javascript">
-	function myclick(num){
-		var myul=document.getElementsByTagName("ul")[0];
-		var lis=myul.getElementsByTagName("li");
-		for(var i=0;i<lis.length;i++){
-			if(num==i){
-				lis[i].setAttribute("class","active");
+	function showfloor(str){
+		for(var i=1;i<8;i++){
+			var sttr=i+"F";
+			var div=document.getElementById(sttr);
+			if(str==sttr){
+				div.style.display="block";
 			}else{
-				lis[i].removeAttribute("class","active");
+				div.style.display="none";
 			}
 		}
 	}
@@ -27,11 +27,11 @@
             </div>
 			<div id="menu_nav">
               <ul>
-                <li class="active" onclick="myclick(0)"><a href="#1F" >Home</a></li>
-                <li onclick="myclick(1)"><a href="#2F">Date and Address</a></li>
-                <li onclick="myclick(2)"><a href="#3F" >Program</a></li>
-				<li onclick="myclick(3)"><a href="#5F" >Registration</a></li>
-                <li onclick="myclick(4)"><a href="#7F" >Contact US</a></li>
+                <li class="active" ><a href="javascript:showfloor('1F')" >Home</a></li>
+                <li ><a href="javascript:showfloor('2F')">Date and Address</a></li>
+                <li ><a href="javascript:showfloor('3F')" >Program</a></li>
+				<li ><a href="javascript:showfloor('5F')" >Registration</a></li>
+                <li ><a href="javascript:showfloor('4F')" >Contact US</a></li>
 				
               </ul>
    		 	</div>    
@@ -49,219 +49,251 @@
          <div style="height:10px"></div>
         <hr style="height:1px;border:none;border-top:1px dashed #ccc;">	
        
-        <div id="content">
-        	<h2 id="1F">Home</h2> 
-			<p><b>The International Workshop on Frontiers of Cyber-Physical Systems and Internet of Things</b> (IWFCI 2017) will be held in Nanjing, China on <b>June 5, 2017</b>.</p>
-			<p>
-               Cyber-physical systems (CPS) are physical and engineered systems whose operations are dependent on the tight coupling between physical processes, computing and communication. Recent years have witnessed the increasing convergence of Cyber-Physical Systems and Internet of Things (IoT) in many critical domains including buildings, transportation, health, energy, and environment. The prevalence of cyber-physical and IoT systems is transforming how we interact with the physical world as profoundly as the Internet transformed how we interact with one another. Harnessing the capabilities of such systems holds the possibility of enormous societal and economic impact.</p>
-               <p>
-This workshop is an interdisciplinary forum that brings together top experts from multiple fields to discuss challenges, technologies, and emerging directions in system design and implementation that pertain to the next-generation CPS and IoT. The topics that will be discussed at the workshop include, but no limited to:
-             </p>
-			 <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>● &nbsp;Data processing and knowledge discovery for CPS/IoT</b><br/>
-				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>● &nbsp;Drone platforms, algorithms, and applications</b><br/>
-				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>● &nbsp;Network and system architectures and protocols</b><br/>
-				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>● &nbsp;CPS/IoT platforms, architecture, and services</b><br/>
-				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>● &nbsp;Location, time, and other network services</b><br/>
-				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>● &nbsp;Operating systems and runtime environments</b><br/>
-				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>● &nbsp;Cloud, mobile, participatory, and social sensing</b><br/>
-				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>● &nbsp;Smart and connected health</b><br/>
-				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>● &nbsp;Smart cities and communities</b><br/>
-				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>● &nbsp;Security and privacy in CPS/IoT</b></p>	
+		<div id="content">
+			<div id="left">
+					<h3>Sidebar Menu</h3>
+					<div class="clr"></div>
+					
+					<ul class="sb_menu">
+						<li class="active"><a href="javascript:showfloor('1F')">Home </a></li>
+						<li><a href="javascript:showfloor('2F')">Date and Address</a></li>
+						<li><a href="javascript:showfloor('6F')">Sponsors</a></li>
+						
+						<li><a href="javascript:showfloor('4F')">Invited Speakers</a></li>
+						<li><a href="javascript:showfloor('5F')">Registration</a></li>
+						<li><a href="javascript:showfloor('3F')">Program</a></li>
+						<li><a href="javascript:showfloor('7F')">Contact Us </a> </li>
+					</ul>
+					
+			</div>
 			
-              <hr style="height:1px;border:none;border-top:1px dashed #ccc;">
-                 <h2 id="2F">Date and Address</h2> 
-                <p> 
-                	<strong>Date :</strong>June 5, 2017. <br/>
-                    <strong>Address :</strong>The College Of Computer Science and Technology, Nanjing University of Aeronautics and Astronautics, 29 Jiangjun Road, jiangning district, Nanjing 211106, P.R China.
-                  </p>
-                   <hr style="height:1px;border:none;border-top:1px dashed #ccc;">
-                  <h2 id="3F">Program</h2> 
-                <p>
-				<table border="1" cellpadding="0" cellspacing="0" width="80%" >
-					<caption >会议程序安排</caption>
-					<tr>
-						<td colspan="4"  align="center">2017年6月4日</td>
-					</tr>
-					
-					<tr>
-						<td width="100" align="center">14:00-18:00</td>
-						<td colspan="3" align="center">注册：南京航空航天大学计算机科学与技术学院一楼</td>
-					</tr>
-					
-					<tr>
-						<td width="100" align="center">18:00</td>
-						<td colspan="3">&nbsp;&nbsp;晚餐（地点：和园餐厅二楼自助餐）</td>
-					
-					</tr>
-					
-					<tr>
-						<td colspan="4" align="center">2017年6月5日 （图书馆1楼报告厅）</td>
-						
-					</tr>
-					<tr>
-						<td width="100" align="center">时间</td>
-						<td align="center" width="130">报告人</td>
-						<td align="center">报告题目</td>
-						<td align="center">主持人</td>
-					</tr>
-					<tr>
-						<td width="100" align="center">8:15 – 8:30	</td>
-						<td></td>
-						<td>&nbsp;&nbsp;开幕式</td>
-						<td></td>
-					</tr>
-					<tr>
-						<td width="100" align="center">8:30 – 9:15	</td>
-						<td width="130">&nbsp;&nbsp;Yanyong Zhang	</td>
-						<td width="444">&nbsp;&nbsp;Towards Internet of Medical Things</td>
-						<td></td>
-					</tr>
-					<tr>
-						<td width="100" align="center">9:15 – 10:00	</td>
-						<td width="130">&nbsp;&nbsp;Lin Zhong	</td>
-						<td>&nbsp;&nbsp;Problems in the gut of embedded systems	</td>
-						<td>	</td>
-					</tr>
-					<tr>
-						<td width="100" align="center">10:00 – 10: 20</td>
-						<td colspan="3">&nbsp;&nbsp;茶歇</td>
-					</tr>
-					<tr>
-						<td width="100" align="center">10:20 – 11:15	</td>
-						<td width="130">&nbsp;&nbsp;Rong Zheng	</td>
-						<td>&nbsp;&nbsp;Sensing and Data Acquisition in the Big Data Era: What, Where and When	</td>
-						<td>	</td>
-					</tr>
-					<tr>
-						<td width="100" align="center">11:15 – 12:00	</td>
-						<td width="130">&nbsp;&nbsp;Pei Zhang	</td>
-						<td>&nbsp;&nbsp;Physical Knowledge Discovery in Cyber-Physical Systems</td>
-						<td>	</td>
-					</tr>
-					<tr>
-						<td width="100" align="center">12:00 – 14:00	</td>
-						<td colspan="3">&nbsp;&nbsp;午餐（地点：和园餐厅二楼自助餐）	</td>
-						
-					</tr>
-					
-					<tr>
-						<td width="100" align="center">14:00 – 14:45	</td>
-						<td width="130">&nbsp;&nbsp;孙志刚	</td>
-						<td>&nbsp;&nbsp;弹性智能网络互联技术		</td>
-						<td>	</td>
-					</tr>
-					
-					<tr>
-						<td width="100" align="center">14:45 – 15:30	</td>
-						<td width="130">&nbsp;&nbsp;Shaojie Shen	</td>
-						<td>&nbsp;&nbsp;Autonomous Aerial Navigation using Monocular Visual-Inertial Fusion		</td>
-						<td>	</td>
-					</tr>
-					
-					<tr>
-						<td width="100" align="center">15:30 – 15:50</td>
-						<td colspan="3">&nbsp;&nbsp;茶歇</td>
-					</tr>
-					<tr>
-						
-						<td width="100" align="center" >15:50 – 16:50</td>
-						<td colspan="2" >&nbsp;&nbsp;Panel Discussion： Vision for drone research and applications in the era of IoT (Guoliang Xing, Lin Zhong, Shaojie Shen, Pei Zhang, 孙志刚)	</td>
-						<td></td>
-					</tr>
-					
-					<tr>
-						<td width="100" align="center">16:50 – 17:00</td>
-						<td colspan="3">&nbsp;&nbsp;闭幕式</td>
-					</tr>
-				</table>
-						
-
-				
-				
-				
-                  </p>  
-                     <hr style="height:1px;border:none;border-top:1px dashed #ccc;">
-                <h2 id="4F">Invited Speakers</h2> 
-                	<p><strong>Yanyong Zhang</strong>, Professor<br/>
-                        ECE/Winlab Rutgers<br/>
-                        The State University of New Jersey<br/>
-                         <a href="http://www.ece.rutgers.edu/~yyzhang/">http://www.ece.rutgers.edu/~yyzhang/</a><br />
-                        <br/>
-
-
-						<strong>Pei Zhang</strong>, Associate Research Professor<br/>
-                        Department of the INI and ECE, Carnegie Mellon University<br />
-                         <a href=" http://www.ece.cmu.edu/~peizhang/"> http://www.ece.cmu.edu/~peizhang/</a><br />
-                        <br/>
-
-                        <strong>Rong Zheng</strong>, Associate Professor <br/>
-                        Joseph IP Distinguished Engineering Fellow <br/>
-                        Associate Chair of Graduate Study and Research <br/>
-                        Dept. of Computing and Software, McMaster University<br/>
-                        <a href="http://www.cas.mcmaster.ca/~rzheng/">http://www.cas.mcmaster.ca/~rzheng/</a><br /><br/>
-                        
-                        <strong>Lin Zhong</strong>, Professor <br/>
-                        Department of Electrical & Computer Engineering, Rice University<br/>
-                         <a href="http://www.ruf.rice.edu/~lzhong/">http://www.ruf.rice.edu/~lzhong/</a><br /><br />
-						 
-						  <strong>Shaojie Shen</strong>, Assistant Professor <br/>
-                        Hong Kong University of Science and Technology<br/>
-                         <a href="http://www.ece.ust.hk/ece.php/profile/facultydetail/eeshaojie">http://www.ece.ust.hk/ece.php/profile/facultydetail/eeshaojie</a><br /><br />
-						 
-						 <strong>Zhigang Sun</strong>, Professor <br/>
-                        National University of Defense Technology<br/><br />
-                    </p> 
-                
-				<hr style="height:1px;border:none;border-top:1px dashed #ccc;">
-				<h2 id="5F">Registration</h2>
-				<p><b>iwfci2017会议注册信息</b></p>
-				<p>1、iwfci2017注册费: 800元/人(5月29号前注册)</br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;				1000元/人(5月28号后注册)
- </p>				
-				<p>2、根据南京航空航天大学的财务制度规定，本次会议的注册费采用银行汇款或转帐的方式汇至： </br>
-						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;账户名称：南京航空航天大学</br>
-						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;开户银行：交通银行南京御道街支行</br>
-						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;银行账号：320006639010149000354</br>
-						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;交行行号：301301000394
-				</p>
-				<p>3、特别注意：请参会者在汇款备注栏填入：iwfci会议注册费+参会代表姓名。</br>    
-								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;请将汇款后的银行回单扫描后，通过电子邮件发给组委会。</br>
-								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;若参会者不能及时按会议规定方式注册，请务必事先与组委会取得联系。</br>
-						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;如果没有备注将无法进行财务结算。 
-				</p>
-				
-				
-				<p>4、报名表下载： <a href="2017年信息物理融合系统与物联网国际前沿技术研讨会参会报名表.docx">【Download】</a></p>
-				
-                  <hr style="height:1px;border:none;border-top:1px dashed #ccc;">
-                <h2 id="6F">Sponsors</h2> 
-                		<img src="images/nh.jpg" width="130"/><br /><br />
-						Nanjing University of Aeronautics and Astronautics.
-						<br /><br />
-                        江苏省计算机学会网络与分布计算专委会(Institute of computer network and distributed computing of Jiangsu Province.)
-                        
-                       
-
-					   
-                <hr style="height:1px;border:none;border-top:1px dashed #ccc;">
-                <h2 id="7F">Contact US</h2>
+			
+			
+			
+			<div id="right">
+				<div id="1F">
+					<h2 >Home</h2> 
+				<p><b>The International Workshop on Frontiers of Cyber-Physical Systems and Internet of Things</b> (IWFCI 2017) will be held in Nanjing, China on <b>June 5, 2017</b>.</p>
 				<p>
-                Dr. Zhao<br />
-                Nanjing University of Aeronautics and Astronautics <br />
-                Email: <a href="mailto:yczhao@nuaa.edu.cn?subject=IWFCI_2017">yczhao@nuaa.edu.cn</a> <br />
-                </p>
+				   Cyber-physical systems (CPS) are physical and engineered systems whose operations are dependent on the tight coupling between physical processes, computing and communication. Recent years have witnessed the increasing convergence of Cyber-Physical Systems and Internet of Things (IoT) in many critical domains including buildings, transportation, health, energy, and environment. The prevalence of cyber-physical and IoT systems is transforming how we interact with the physical world as profoundly as the Internet transformed how we interact with one another. Harnessing the capabilities of such systems holds the possibility of enormous societal and economic impact.</p>
+				   <p>
+	This workshop is an interdisciplinary forum that brings together top experts from multiple fields to discuss challenges, technologies, and emerging directions in system design and implementation that pertain to the next-generation CPS and IoT. The topics that will be discussed at the workshop include, but no limited to:
+				 </p>
+				 <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>● &nbsp;Data processing and knowledge discovery for CPS/IoT</b><br/>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>● &nbsp;Drone platforms, algorithms, and applications</b><br/>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>● &nbsp;Network and system architectures and protocols</b><br/>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>● &nbsp;CPS/IoT platforms, architecture, and services</b><br/>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>● &nbsp;Location, time, and other network services</b><br/>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>● &nbsp;Operating systems and runtime environments</b><br/>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>● &nbsp;Cloud, mobile, participatory, and social sensing</b><br/>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>● &nbsp;Smart and connected health</b><br/>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>● &nbsp;Smart cities and communities</b><br/>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>● &nbsp;Security and privacy in CPS/IoT</b></p>	
 				
-                <p>Dr. Xie<br />
-                Nanjing University of Aeronautics and Astronautics <br />
-                </p>
-				
-                <br />
+				  <hr style="height:1px;border:none;border-top:1px dashed #ccc;">
+					</div>
+					
+					<div id="2F" style="display:none">
+					<h2 >Date and Address</h2> 
+					<p> 
+						<strong>Date :</strong>June 5, 2017. <br/>
+						<strong>Address :</strong>The College Of Computer Science and Technology, Nanjing University of Aeronautics and Astronautics, 29 Jiangjun Road, jiangning district, Nanjing 211106, P.R China.
+					  </p>
+					   <hr style="height:1px;border:none;border-top:1px dashed #ccc;">
+					   
+					   </div>
+					   
+					   <div id="3F" style="display:none">
+					  <h2 id="3F">Program</h2> 
+					<p>
+					<table border="1" cellpadding="0" cellspacing="0" width="80%" >
+						<caption >会议程序安排</caption>
+						<tr>
+							<td colspan="4"  align="center">2017年6月4日</td>
+						</tr>
+						
+						<tr>
+							<td width="100" align="center">14:00-18:00</td>
+							<td colspan="3" align="center">注册：南京航空航天大学计算机科学与技术学院一楼</td>
+						</tr>
+						
+						<tr>
+							<td width="100" align="center">18:00</td>
+							<td colspan="3">&nbsp;&nbsp;晚餐（地点：和园餐厅二楼自助餐）</td>
+						
+						</tr>
+						
+						<tr>
+							<td colspan="4" align="center">2017年6月5日 （图书馆1楼报告厅）</td>
+							
+						</tr>
+						<tr>
+							<td width="100" align="center">时间</td>
+							<td align="center" width="130">报告人</td>
+							<td align="center">报告题目</td>
+							<td align="center">主持人</td>
+						</tr>
+						<tr>
+							<td width="100" align="center">8:15 – 8:30	</td>
+							<td></td>
+							<td>&nbsp;&nbsp;开幕式</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td width="100" align="center">8:30 – 9:15	</td>
+							<td width="130">&nbsp;&nbsp;Yanyong Zhang	</td>
+							<td width="444">&nbsp;&nbsp;Towards Internet of Medical Things</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td width="100" align="center">9:15 – 10:00	</td>
+							<td width="130">&nbsp;&nbsp;Lin Zhong	</td>
+							<td>&nbsp;&nbsp;Problems in the gut of embedded systems	</td>
+							<td>	</td>
+						</tr>
+						<tr>
+							<td width="100" align="center">10:00 – 10: 20</td>
+							<td colspan="3">&nbsp;&nbsp;茶歇</td>
+						</tr>
+						<tr>
+							<td width="100" align="center">10:20 – 11:15	</td>
+							<td width="130">&nbsp;&nbsp;Rong Zheng	</td>
+							<td>&nbsp;&nbsp;Sensing and Data Acquisition in the Big Data Era: What, Where and When	</td>
+							<td>	</td>
+						</tr>
+						<tr>
+							<td width="100" align="center">11:15 – 12:00	</td>
+							<td width="130">&nbsp;&nbsp;Pei Zhang	</td>
+							<td>&nbsp;&nbsp;Physical Knowledge Discovery in Cyber-Physical Systems</td>
+							<td>	</td>
+						</tr>
+						<tr>
+							<td width="100" align="center">12:00 – 14:00	</td>
+							<td colspan="3">&nbsp;&nbsp;午餐（地点：和园餐厅二楼自助餐）	</td>
+							
+						</tr>
+						
+						<tr>
+							<td width="100" align="center">14:00 – 14:45	</td>
+							<td width="130">&nbsp;&nbsp;孙志刚	</td>
+							<td>&nbsp;&nbsp;弹性智能网络互联技术		</td>
+							<td>	</td>
+						</tr>
+						
+						<tr>
+							<td width="100" align="center">14:45 – 15:30	</td>
+							<td width="130">&nbsp;&nbsp;Shaojie Shen	</td>
+							<td>&nbsp;&nbsp;Autonomous Aerial Navigation using Monocular Visual-Inertial Fusion		</td>
+							<td>	</td>
+						</tr>
+						
+						<tr>
+							<td width="100" align="center">15:30 – 15:50</td>
+							<td colspan="3">&nbsp;&nbsp;茶歇</td>
+						</tr>
+						<tr>
+							
+							<td width="100" align="center" >15:50 – 16:50</td>
+							<td colspan="2" >&nbsp;&nbsp;Panel Discussion： Vision for drone research and applications in the era of IoT (Guoliang Xing, Lin Zhong, Shaojie Shen, Pei Zhang, 孙志刚)	</td>
+							<td></td>
+						</tr>
+						
+						<tr>
+							<td width="100" align="center">16:50 – 17:00</td>
+							<td colspan="3">&nbsp;&nbsp;闭幕式</td>
+						</tr>
+					</table>
+					  </p>  
+						 <hr style="height:1px;border:none;border-top:1px dashed #ccc;">
+						 </div>
+						 
+						 
+						  <div id="4F" style="display:none">
+					<h2 id="4F">Invited Speakers</h2> 
+						<p><strong>Yanyong Zhang</strong>, Professor<br/>
+							ECE/Winlab Rutgers<br/>
+							The State University of New Jersey<br/>
+							 <a href="http://www.ece.rutgers.edu/~yyzhang/">http://www.ece.rutgers.edu/~yyzhang/</a><br />
+							<br/>
+
+
+							<strong>Pei Zhang</strong>, Associate Research Professor<br/>
+							Department of the INI and ECE, Carnegie Mellon University<br />
+							 <a href=" http://www.ece.cmu.edu/~peizhang/"> http://www.ece.cmu.edu/~peizhang/</a><br />
+							<br/>
+
+							<strong>Rong Zheng</strong>, Associate Professor <br/>
+							Joseph IP Distinguished Engineering Fellow <br/>
+							Associate Chair of Graduate Study and Research <br/>
+							Dept. of Computing and Software, McMaster University<br/>
+							<a href="http://www.cas.mcmaster.ca/~rzheng/">http://www.cas.mcmaster.ca/~rzheng/</a><br /><br/>
+							
+							<strong>Lin Zhong</strong>, Professor <br/>
+							Department of Electrical & Computer Engineering, Rice University<br/>
+							 <a href="http://www.ruf.rice.edu/~lzhong/">http://www.ruf.rice.edu/~lzhong/</a><br /><br />
+							 
+							  <strong>Shaojie Shen</strong>, Assistant Professor <br/>
+							Hong Kong University of Science and Technology<br/>
+							 <a href="http://www.ece.ust.hk/ece.php/profile/facultydetail/eeshaojie">http://www.ece.ust.hk/ece.php/profile/facultydetail/eeshaojie</a><br /><br />
+							 
+							 <strong>Zhigang Sun</strong>, Professor <br/>
+							National University of Defense Technology<br/><br />
+						</p> 
+					
+					<hr style="height:1px;border:none;border-top:1px dashed #ccc;">
+					</div>
+					 <div id="5F" style="display:none">
+					<h2 id="5F">Registration</h2>
+					<p><b>iwfci2017会议注册信息</b></p>
+					<p>1、iwfci2017注册费: 800元/人(5月29号前注册)</br>
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;				1000元/人(5月28号后注册)
+	 </p>				
+					<p>2、根据南京航空航天大学的财务制度规定，本次会议的注册费采用银行汇款或转帐的方式汇至： </br>
+							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;账户名称：南京航空航天大学</br>
+							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;开户银行：交通银行南京御道街支行</br>
+							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;银行账号：320006639010149000354</br>
+							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;交行行号：301301000394
+					</p>
+					<p>3、特别注意：请参会者在汇款备注栏填入：iwfci会议注册费+参会代表姓名。</br>    
+									&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;请将汇款后的银行回单扫描后，通过电子邮件发给组委会。</br>
+									&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;若参会者不能及时按会议规定方式注册，请务必事先与组委会取得联系。</br>
+							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;如果没有备注将无法进行财务结算。 
+					</p>
+					
+					
+					<p>4、报名表下载： <a href="2017年信息物理融合系统与物联网国际前沿技术研讨会参会报名表.docx">【Download】</a></p>
+					
+					  <hr style="height:1px;border:none;border-top:1px dashed #ccc;">
+					</div>
+					 <div id="6F" style="display:none">
+					<h2 id="6F">Sponsors</h2> 
+							<img src="images/nh.jpg" width="130"/><br /><br />
+							Nanjing University of Aeronautics and Astronautics.
+							<br /><br />
+							江苏省计算机学会网络与分布计算专委会(Institute of computer network and distributed computing of Jiangsu Province.)
+							
+						   
+
+						   
+					<hr style="height:1px;border:none;border-top:1px dashed #ccc;">
+					
+					</div>
+					 <div id="7F" style="display:none">
+					<h2 id="7F">Contact US</h2>
+					<p>
+					Dr. Zhao &nbsp;Dr. Xie<br />	
+					Nanjing University of Aeronautics and Astronautics <br />
+					phone ：025-84892848<br/>
+					Email: <a href="mailto:iwfci@nuaa.edu.cn?subject=IWFCI_2017">iwfci2017@nuaa.edu.cn</a> <br />
+					Nanjing University of Aeronautics and Astronautics <br />
+					</p>
+					
+					<br />
+			</div>
         </div>
-        
         <div id="clr"></div>
         <div id="footer">
-        iwfci 2017, NanJing, jiangsu, China </br>
-		Copyright © 2017-2018 iwfci 2017. All rights reserved.
+        iwfci 2017, NanJing, jiangsu, China  &nbsp;&nbsp;Copyright © 2017-2018 iwfci 2017. All rights reserved.
         </div>
     </div>
 <body> 
