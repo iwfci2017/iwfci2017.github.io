@@ -153,10 +153,9 @@ h1, h2, h3, h4{
 	display: block;
     padding: 3px;
     width: 160px;
-    background-color: #045c97;
     border-bottom: 1px solid #eee;
 	font-weight: bold;
-	color:#eee;
+	 color: #06C;
     text-decoration: none;
 }
 
@@ -229,7 +228,6 @@ h3{
 #left ul{
 	margin: 0;
     padding: 0;
-    color: #939393;
     list-style: none;
 }
 
